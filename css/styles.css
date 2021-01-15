@@ -534,7 +534,8 @@ main {
   color: #ffffff;
 }
 
-.pf-link:hover .overlay {
+.pf-link:hover .overlay,
+.pf-link:focus .overlay {
   transform: translateY(0);
 }
 
