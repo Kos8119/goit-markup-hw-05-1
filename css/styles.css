@@ -5,7 +5,7 @@
   --accent-color: #2196f3;
   --text-color: #212121;
   --icon-slink-color: #afb1b8;
-  --animation-duration: 1500ms;
+  --animation-duration: 250ms;
   --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* общие */
@@ -93,6 +93,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  
+
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -130,6 +134,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: #757575;
+  transition-property: color;
+  transition-duration: var(--animation-duration);
+  
 }
 .header-contact:focus,
 .header-contact:hover {
@@ -203,6 +210,9 @@ img {
 .hero-button > .button {
   color: var(--header-bg-color);
   background-color: var(--accent-color);
+  transition-property: color;
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
 }
 .hero-button > .button:focus,
 .hero-button > .button:hover {
