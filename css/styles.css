@@ -5,7 +5,7 @@
   --accent-color: #2196f3;
   --text-color: #212121;
   --icon-slink-color: #afb1b8;
-  --animation-duration: 250ms;
+  --animation-duration: 1500ms;
   --animation-type: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* общие */
@@ -624,11 +624,13 @@ footer {
 .footer-links > li:not(:last-child) {
   margin-right: 10px;
 }
+
+}
 .foot-link :hover,
 .foot-link :focus {
   background-color: var(--accent-color);
   fill: var(--header-bg-color);
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .foot-master {
