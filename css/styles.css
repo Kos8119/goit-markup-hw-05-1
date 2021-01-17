@@ -187,10 +187,7 @@ img {
   color: var(--header-bg-color);
   /*background-color: var(--footer-bg-color);*/
 }
-/*.main-title {
-  padding-left: 237px;
-  padding-right: 237px;
-}*/
+
 
 .button {
   display: inline-block;
@@ -207,6 +204,7 @@ img {
   color: var(--text-color);
   background-color: #f5f4fa;
 }
+
 .hero-button > .button {
   color: var(--header-bg-color);
   background-color: var(--accent-color);
@@ -378,6 +376,7 @@ h2 {
   margin-right: 10px;
 }
 
+
 .master {
   display: inline-flex;
   justify-content: center;
@@ -389,14 +388,17 @@ h2 {
   border-radius: 50%;
   background-color: var(--header-bg-color);
   fill: var(--icon-slink-color);
+  
 }
+
 
 .s-links :hover,
 .s-links :focus {
   background-color: var(--accent-color);
   fill: var(--header-bg-color);
   cursor: pointer;
-}
+} 
+
 .button-team {
   width: 20px;
   height: 20px;
@@ -466,7 +468,7 @@ main {
   
 }
 .button {
-transition-property: color;
+  transition-property: color, background-color;
   transition-duration: var(--animation-duration);
 }
 
@@ -661,6 +663,8 @@ footer {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--header-bg-color);
+  transition-property: background-color;
+  transition-duration: var(--animation-duration);
 }
 
 /* модальное окно*/
