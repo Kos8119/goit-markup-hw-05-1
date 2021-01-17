@@ -405,7 +405,7 @@ h2 {
 /* наши клиенты*/
 .clients {
   padding-top: 94px;
-  padding-bottom: 172px;
+  padding-bottom: 94px;
 }
 .clients-title,
 h2 {
@@ -431,6 +431,8 @@ h2 {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--icon-slink-color);
+  transition-property: color;
+  transition-duration: var(--animation-duration);
 }
 .cl-image {
   fill: currentColor;
@@ -461,6 +463,11 @@ main {
   color: var(--text-color);
   background-color: var(--header-bg-color);
   cursor: pointer;
+  
+}
+.button {
+transition-property: color;
+  transition-duration: var(--animation-duration);
 }
 
 .button:focus,
