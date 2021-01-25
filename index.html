@@ -299,6 +299,26 @@
                 <button class="close" data-modal-close>
                     <img class="cross" src="./images/Vector.png" alt="крестик">
                 </button>
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form action="" class="modal-form">
+                    <label for="">Имя
+                        <input type="text" name="name">
+                    </label>
+                    <label for="">Телефон
+                        <input type="text" name="phone">
+                    </label>
+                    <label for="">Почта
+                        <input type="email" name="email">
+                    </label>
+                    <label for="">Комментарий
+                        <textarea name="comment" id="" rows="5" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="accept" value="accept">
+                    Соглашаюсь с рассылкой и принимаю Условия договора
+                    </label>
+                    <button type="submit" class="button email-submit">Отправить</button>
+                </form>
             </div>
         </div>
     </main>
@@ -340,13 +360,15 @@
                                 </a></li>
                         </ul>
                     </div>
-                    <form class="footer-form"> 
-                        <h3 class="f-email-text">Подпишитесь на рассылку</h3>
-                        <label class="us-email" for="user-email" name="email"></label>
-                        <input class="email-field" type="email" id="user-email" placeholder="E-mail">
-                        <button type="submit"class="button email-submit">Подписаться
-                            <span class="send-icon"> <img src="./images/icon send.svg" alt="бумажный самолетик" width="24px" height="24px"></span>
-                        </button>
+                    <form class="footer-form">
+                        <label class="f-label" for="user-email" name="email">Подпишитесь на рассылку</label>
+                        <div class="f-area">
+                            <input class="f-input" type="email" id="user-email" placeholder="E-mail">
+                            <button type="submit"class="button email-submit">Подписаться
+                                <img class="send-icon" src="./images/icon send.svg" alt="бумажный самолетик" width="24px" height="24px">
+                            </button>
+                        </div>
+                        
                     </form>
             </div>
         </div>
@@ -354,3 +376,8 @@
     <script src="./js/modal.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <p class="f-email-text">Подпишитесь на рассылку</p> -->

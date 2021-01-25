@@ -669,7 +669,59 @@ footer {
 }
 
 /* форма подписки на рассылку */
-.f-email-text {
+.footer-form {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 570px;
+  margin-left: auto;
+  margin-right:0;
+}
+
+.f-form {
+  display: flex;
+}
+
+.f-label {
+  position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-bg-color);
+ }
+.f-area {
+  display: inline-block;
+}
+.f-input {
+  display: inline-block;
+   /*width: 358px;*/
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--footer-bg-color);
+ }
+
+ .f-input::placeholder {
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+
+
+letter-spacing: 0.03em;
+
+color: rgba(255, 255, 255, 0.6);
+ }
+/* .f-email-text {
   margin-left: 93px;
   margin-top: 12px;
   font-family: Roboto;
@@ -694,6 +746,8 @@ footer {
   border-radius: 4px;
   background-color: var(--footer-bg-color);
 }
+
+
 
 /* убрать после окончания
 .button {
@@ -732,9 +786,8 @@ footer {
   justify-content: center;
   margin-left: 10px;
   margin-right: 28px;
-  /*margin-top: 13px;*/
-
-}
+  /*margin-top: 13px; */
+} 
 
 /* модальное окно*/
 .backdrop {
@@ -783,4 +836,24 @@ footer {
   width: 11px;
   height: 11px;
   color: #000000;
+}
+
+.modal-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
